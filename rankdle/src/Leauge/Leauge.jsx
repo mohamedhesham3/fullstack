@@ -21,7 +21,7 @@ export const Leauge = () => {
   } = useContext(Data);
 
   useEffect(() => {
-    fetch("http://localhost:3000/league")
+    fetch("https://backend-a6ua.onrender.com/league")
       .then((res) => res.json())
       .then((data) => setArr(data[index].link))
       .catch((error) => console.error("Error fetching data:", error));

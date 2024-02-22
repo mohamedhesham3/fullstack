@@ -31,7 +31,7 @@ const SubmitPage = () => {
       setChoosecate(true);
       setChosRank(true);
     } else if (category === "league") { // Corrected the spelling of "League"
-      fetch("http://localhost:3000/league", {
+      fetch("https://backend-a6ua.onrender.com/league", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -39,7 +39,7 @@ const SubmitPage = () => {
         body: JSON.stringify({ link, rank, category }),
       });
     } else if (category === "Valorant") {
-      fetch("http://localhost:3000/Valorant", {
+      fetch("https://backend-a6ua.onrender.com/Valorant", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

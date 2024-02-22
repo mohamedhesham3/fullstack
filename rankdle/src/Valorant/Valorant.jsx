@@ -21,7 +21,7 @@ export const Valorant = () => {
   } = useContext(Data);
 
   useEffect(() => {
-    fetch("http://localhost:3000/Valorant")
+    fetch("https://backend-a6ua.onrender.com/Valorant")
       .then((res) => res.json())
       .then((data) => setArr(data[index].link))
       .catch((error) => console.error("Error fetching data:", error));

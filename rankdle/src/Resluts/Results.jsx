@@ -24,7 +24,7 @@ const Results = () => {
   } = useContext(Data);
   useEffect(() => {
     if (window.location.pathname === "/Valorant") {
-      fetch("http://localhost:3000/Valorant")
+      fetch("https://backend-a6ua.onrender.com/Valorant")
         .then((res) => res.json())
         .then((data) => setrAnkresult(data[index].rank));
 
@@ -33,7 +33,7 @@ const Results = () => {
         setLoading(false);
       }, 670);
     } else {
-      fetch("http://localhost:3000/league")
+      fetch("https://backend-a6ua.onrender.com/league")
       .then((res) => res.json())
       .then((data) => setrAnkresult(data[index].rank));
       
